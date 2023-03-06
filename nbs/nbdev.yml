@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "np-dev-hello-world"
+  site-url: "https://niloy71.github.io/np-dev-hello-world"
+  description: "Hello World with npdev"
+  repo-branch: main
+  repo-url: "https://github.com/niloy71/np-dev-hello-world"
