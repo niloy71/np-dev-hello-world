@@ -32,7 +32,6 @@ jobs:
         run: |
           python -c "import pandas; print(pandas.__version__)"
       - name: 'build-docs'
-        description: 'Create docs with nbdev'
         # runs-on: ubuntu-latest
         inputs:
           pre:
