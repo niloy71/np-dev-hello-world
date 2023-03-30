@@ -3,6 +3,21 @@ from configparser import ConfigParser
 import setuptools, shlex
 assert parse_version(setuptools.__version__)>=parse_version('36.2')
 
+# Read settings from settings.ini file
+config = ConfigParser()
+config.read('settings.ini')
+
+# Read requirements from requirements.txt file
+with open('requirements.txt') as f:
+    requirements = f.read().strip()
+
+# Assign requirements to the `requirements` variable in settings.ini
+config['DEFAULT']['requirements'] = requirements
+
+# Save the updated settings.ini file
+with open('settings.ini', 'w') as f:
+    config.write(f)
+
 # note: all settings are in settings.ini; edit there, not here
 config = ConfigParser(delimiters=['='])
 config.read('settings.ini')
