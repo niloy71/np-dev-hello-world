@@ -15,6 +15,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Check Python version
+        run: |
+          python --version
       - name: Install required packages
         run: |
           pip install pandas
