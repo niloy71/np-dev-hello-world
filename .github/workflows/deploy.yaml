@@ -10,7 +10,13 @@ on:
   push:
     branches: [ "main", "master" ]
   workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps: [uses: fastai/workflows/quarto-ghp@master]
+    steps:
+      - name: Install required packages
+        run: |
+          pip install pandas
+
+      - uses: fastai/workflows/quarto-ghp@master
