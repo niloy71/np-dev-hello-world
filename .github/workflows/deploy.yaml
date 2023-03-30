@@ -18,5 +18,7 @@ jobs:
       - name: Install required packages
         run: |
           pip install pandas
-
+      - name: Check installed packages
+        run: |
+          python -c "import pandas; print(pandas.__version__)"
       - uses: fastai/workflows/quarto-ghp@master
