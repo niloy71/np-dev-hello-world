@@ -15,9 +15,11 @@ jobs:
   run-script:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.4.2
+        with:
+          ref: main
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v2.4.3
         with:
           python-version: '3.7'
       - name: Run My Script
