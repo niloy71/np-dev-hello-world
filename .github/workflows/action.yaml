@@ -1,9 +1,15 @@
 name: Run My Python Script
 
+permissions:
+  contents: write
+  pages: write
+
 on:
+  # schedule:
+  #   - cron: '0 0/3 * * *'
   push:
-    branches:
-      branches: [ "main", "master" ]
+    branches: [ "main", "master" ]
+  workflow_dispatch:
 
 jobs:
   run-script:
