@@ -16,5 +16,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run My Script
-        run: python nbs/00_core.ipynb
+        run: python /nbs/00_core.ipynb
         working-directory: ${{ github.workspace }}
