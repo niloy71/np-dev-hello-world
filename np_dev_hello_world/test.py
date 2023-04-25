@@ -3,7 +3,4 @@
 # %% auto 0
 __all__ = []
 
-# %% ../nbs/test.ipynb 6
-send_mail(to='niloy.shown+a1@gmail.com',
-          subject="test Mail")
 
