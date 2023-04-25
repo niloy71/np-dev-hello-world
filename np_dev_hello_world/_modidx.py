@@ -6,5 +6,4 @@ d = { 'settings': { 'branch': 'main',
                 'git_url': 'https://github.com/niloy71/np-dev-hello-world',
                 'lib_path': 'np_dev_hello_world'},
   'syms': { 'np_dev_hello_world.core': { 'np_dev_hello_world.core.foo': ('core.html#foo', 'np_dev_hello_world/core.py'),
-                                         'np_dev_hello_world.core.say_hello': ('core.html#say_hello', 'np_dev_hello_world/core.py')},
-            'np_dev_hello_world.test': {}}}
+                                         'np_dev_hello_world.core.say_hello': ('core.html#say_hello', 'np_dev_hello_world/core.py')}}}
